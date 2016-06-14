@@ -3,8 +3,9 @@ require('styles/App.scss');
 
 import React from 'react';
 
+
 //引入数据文件
-let imageDate = require('../data/imageDate');
+let imageDate = require('../data/imageData.json');
 
 //自动执行把图片数据的名字转化为文件路径名
 imageDate = (function(imageArr){
@@ -21,11 +22,13 @@ imageDate = (function(imageArr){
 class AppComponent extends React.Component {
   render() {
     return (
-      <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <span>hello word</span>
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
-      </div>
+      <section className="stage">
+        <section className="img-sec">
+        </section>
+        <nav class="controller-nav">
+
+        </nav>
+      </section>
     );
   }
 }
